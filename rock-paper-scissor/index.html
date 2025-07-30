@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+  <div id="intro">
+    <h1>Welcome to ROCK-PAPER-SCISSORS game!</h1>
+    <button id="play-button" onclick="playGame()">Play</button>
+
+  </div>
+
+  <div class="container" id="game-container">
+    <div class="score-board">
+      <span id="computer-label" class="label">COMP</span>
+      <h1><span id="user-score">0</span> : <span id="computer-score">0</span></h1>
+      <span id="user-label" class="label">USER</span>    
+
+    </div>
+
+    <h2>Computer's choice: </h2>
+
+    <h1><span id="computer-choice" class="emoji upside-down-text">⏬</span></h1>
+    <h3 id="result-text">Start the game</h3>
+    <h1><span id="user-choice" class="emoji">⏬</span></h1>
+    
+    <h2>Your choice: </h2>
+    <div id="choices">
+      <button id="rock" onclick="">Rock</button>
+      <button id="paper" onclick="">Paper</button>
+      <button id="scissors" onclick="">Scissors</button>
+    </div>
+
+    <button onclick="restart()">Restart</button>
+    <button onclick="exit()">Exit</button>
+  </div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>

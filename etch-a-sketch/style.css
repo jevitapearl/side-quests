@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:antiquewhite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+h1{
+  font-family: "Modak", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  color: rgb(228, 130, 146);
+}
+
+ul li{
+  list-style: none;
+}
+
+button{
+  all: unset;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: "Bitcount", sans-serif;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.options ul{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.grid-container{
+  display: grid;
+  border: 2px solid black;
+  margin: auto;
+  width: 90vh;
+  height: 90vh;
+  margin: 2rem auto;
+}
+
+.cell{
+  background-color: white;
+  border: 1px solid black;
+}
+

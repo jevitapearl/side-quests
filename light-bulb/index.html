@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Bulb</title>
+
+  <style>
+    body{
+      background-color: black;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <img id="bulb" src="bulb_off.png" alt="lights-off" style="text-align: center;">
+
+  <br><button onclick="document.getElementById('bulb').src='bulb_on.png'">Switch on</button>
+  <br><button onclick="document.getElementById('bulb').src='bulb_off.png'">Switch off</button>
+</body>
+</html>

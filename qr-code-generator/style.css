@@ -1,0 +1,97 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(34, 33, 33);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  gap: 50px;
+}
+
+.container{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;;
+}
+
+input{
+  padding: 8px 15px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: rgb(82, 82, 228);
+  color: white;
+  text-align: center;
+  padding: 13px;
+  width: 140px;
+  border-radius: 8px;
+}
+
+button:hover{
+    box-shadow: 1px 2px 1px rgb(167, 167, 167);
+
+}
+
+#imgBox{
+  border-radius: 5px;
+  width: 180px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey;
+  transition: max-height 1s;
+}
+
+#imgBox img{
+  padding: 10px;
+}
+
+
+#imgBox.show-img{
+  border-radius: 5px;
+  max-height: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.error{
+  animation: shake 0.1s linear 3;
+}
+
+@keyframes shake{
+  0%{
+    transform: translate(0);
+  }
+
+  25%{
+    transform: translate(-2px);
+  }
+
+  50%{
+    transform: translate(0);
+  }
+
+  75%{
+    transform: translate(2px);
+  }
+
+  100%{
+    transform: translate(0);
+  }
+}

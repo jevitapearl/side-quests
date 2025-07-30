@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Archivo Black", sans-serif;
+  background-color: rgb(200, 167, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: skyblue;
+  margin: 30px auto;
+  padding: 20px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#num{
+  font-size: 3rem;
+}
+
+button{
+  background-color: rgb(125, 194, 155);
+  padding: 0.5rem 2rem;
+}
