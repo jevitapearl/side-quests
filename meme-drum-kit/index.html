@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Drum Kit</title>
+</head>
+
+<body>
+  <h1>Click the keys or use your keyboard</h1>
+  <div class="container">
+    <div data-key="65" id="A" class="key"><kbd>A</kbd><span class="sound-text sound">OMG</span></div>
+    <div data-key="83" id="S" class="key"><kbd>S</kbd><span class="sound-text sound">AFML</span></div>
+    <div data-key="68" id="D" class="key"><kbd>D</kbd><span class="sound-text sound">Notif</span></div>
+    <div data-key="70" id="F" class="key"><kbd>F</kbd><span class="sound-text sound">Bruh</span></div>
+    <div data-key="71" id="G" class="key"><kbd>G</kbd><span class="sound-text sound">Nani</span></div>
+    <div data-key="72" id="H" class="key"><kbd>H</kbd><span class="sound-text sound">OOh</span></div>
+    <div data-key="74" id="J" class="key"><kbd>J</kbd><span class="sound-text sound">Quack</span></div>
+    <div data-key="75" id="K" class="key"><kbd>K</kbd><span class="sound-text sound">Boom</span></div>
+    <div data-key="76" id="L" class="key"><kbd>L</kbd><span class="sound-text sound">Error</span></div>
+  </div>
+
+  <audio data-key="65" src="audio/Oh_my_god.wav"></audio>
+  <audio data-key="83" src="audio/a_few_moments_later.wav"></audio>
+  <audio data-key="68" src="audio/andriod_notif.wav"></audio>
+  <audio data-key="70" src="audio/bruh.wav"></audio>
+  <audio data-key="71" src="audio/nani.wav"></audio>
+  <audio data-key="72" src="audio/Ooh.wav"></audio>
+  <audio data-key="74" src="audio/quack.wav"></audio>
+  <audio data-key="75" src="audio/vine_boom.wav"></audio>
+  <audio data-key="76" src="audio/windows_error.wav"></audio>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
