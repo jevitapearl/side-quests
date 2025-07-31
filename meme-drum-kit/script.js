@@ -1,9 +1,12 @@
 window.addEventListener("keydown", keySound);
-keyDivs = document.querySelectorAll("div.key");
+const keys = document.querySelectorAll(".key");
+keys.forEach(key => {key.addEventListener("transitionend", removeClass)})
 
-keyDivs.forEach(div => {
+
+keys.forEach(div => {
   div.addEventListener("click", clickSound);
 });
+
 
 function keySound(e){
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -15,6 +18,7 @@ function keySound(e){
   audio.currentTime=0;
   audio.play();
 }
+
 
 function clickSound(e){
   const clickedElement = e.target;
@@ -29,10 +33,9 @@ function clickSound(e){
   audio.play();
 }
 
-const keys = document.querySelectorAll(".key");
 
-keys.forEach(key => key.addEventListener("transitionend", (e) => {
+function removeClass(e) {
   if(e.propertyName !== "transform") return;
 
-  e.target.classList.remove("playing");
-}))
+  this.classList.remove("playing");
+}
