@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Loading page</title>
+
+  <style>
+    body{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    @keyframes rotate { to{
+        transform: rotate(1turn)
+      }
+    }
+
+    .loading{
+      height: 75px;
+      width: 75px;
+      border: 7px solid grey;
+      border-top: 8px solid rgb(93, 93, 232);
+      border-left: 8px solid rgb(93, 93, 232);
+      border-radius: 50%;
+      animation: rotate 1s infinite linear;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  
+
+  <h1>This is a loading page</h1>
+  <section class="loading"></section>
+  
+</body>
+</html>

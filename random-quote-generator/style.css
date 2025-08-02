@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(53, 53, 54);
+}
+
+q{
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+figcaption{
+  font-size: 1rem;
+}
+
+img{
+  display: inline-block;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 10px;
+}
+
+button{
+  all: unset;
+  background-color: rgb(66, 179, 141);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+button:hover, button:active{
+  box-shadow: 2px 2px 5px white;
+}
+
+.quote-container{
+  max-height: 0px;
+  max-width: 90%;
+  overflow: hidden;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 1s ease-in;
+}
+
+.character-image{
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.display-quote{
+  max-height: 100%;
+  padding: 10px;
+  transition: all 1s linear;
+}
+
+#author{
+  justify-self: left;
+}
